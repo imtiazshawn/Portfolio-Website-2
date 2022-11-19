@@ -1,0 +1,143 @@
+.Work{
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 70vh;
+    margin-bottom: 13rem;
+    margin-top: 9rem;
+}
+
+.work-heading{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.work-heading>span:nth-child(1){
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.work-heading>span:nth-child(2){
+    color: var(--support);
+    font-size: 16px;
+}
+
+.slide{
+    height: 540px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem; 
+    /* border: 10px solid var(--card); */
+    box-shadow: 2px 2px 8px 5px rgba(0, 0, 0, 0.35);
+    overflow: hidden;   
+    position: relative;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: .5s;
+}
+
+
+
+@-webkit-keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+.slide-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slide-item .forImage{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    margin-left: 1rem;
+}
+
+.forImage img{
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid var(--card);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.slide-item .desc h2{
+    font-size: 40px;
+    color: var(--white);
+}
+.slide-item .desc p{
+    font-size: 20px;
+    color: var(--support);
+}
+
+.slide-item .desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.demo-btn{
+    height: 2rem;
+    width: 6rem;
+    padding: 0.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 940px) {
+    .Work{
+        padding: 0;
+    }
+    .work-heading{
+        margin-top: 10rem;
+        margin-left: 2rem;
+    }
+    .slide{
+        height: auto;
+    }
+    .slider{
+        flex-direction: column;
+        width: 100%;
+    }
+    .forImage img{
+        width: 100%;
+    }
+    .slide-item{
+        flex-direction: column;
+    }
+    .demo-btn{
+        height: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .forImage{
+        margin-right: 20px;
+        object-fit: contain;
+    }
+}

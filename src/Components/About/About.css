@@ -1,0 +1,70 @@
+.About{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-bottom: 13rem;
+    margin-top: 9rem;
+}
+
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 2rem;
+    width: 30rem;
+}
+
+.awesome > :nth-child(1){
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesome > :nth-child(2){
+    color: var(--secondary);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.awesome > :nth-child(3){
+    color: var(--support);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.a-btn{
+    width: 12rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+.cards{
+    position: relative;
+}
+
+.cards>*{
+    position: absolute;
+}
+
+
+@media screen and (max-width: 940px) {
+    .About{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+        height: 160vh;
+    }
+    .awesome{
+        margin-left: 1.2rem;
+        width: auto;
+    }
+    .cards{
+        flex-direction: column;
+        display: flex;
+        gap: 17rem;
+    }
+    .cards>*{
+        position: static;
+    }
+    
+}

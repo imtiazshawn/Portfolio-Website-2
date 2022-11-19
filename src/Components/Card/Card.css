@@ -1,0 +1,43 @@
+.Card{
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    text-align: center;
+    background: var(--card);
+    border: 7px solid var(--secondary);
+    border-radius: 20px;
+    padding: 0px 26px 2rem 26px;
+}
+
+.Card span:nth-of-type(2){
+    color: var(--support);
+    font-size: 16px;
+}
+.Card span:nth-of-type(1){
+    color: var(--white);
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+.card-button{
+    background: transparent;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 4px;
+    font-size: 16px;
+    color: #5290fd;
+}
+
+@media screen and (max-width: 940px) {
+    .Card{
+        width: 250px;
+        margin-left: 2rem;
+    }
+}

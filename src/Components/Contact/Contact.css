@@ -1,0 +1,145 @@
+.Contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+.left-contact{
+    margin-left: 2rem;
+    flex: 3;
+    display: flex;
+    /* gap: 2rem; */
+    flex-direction: column;
+}
+
+
+.contact-heading{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.contact-heading>span:nth-child(1){
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2.2rem;
+}
+.contact-heading>span:nth-child(2){
+    color: var(--support);
+    font-size: 16px;
+}
+
+
+.contact-ad{
+    margin-top: 4rem;
+    background: var(--card);
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+}
+
+.contact-ad>span{
+    z-index: 2;
+    margin-left: 0;
+}
+
+.contact-ad>div{
+    position: absolute;
+    background: var(--secondary);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+
+.right-contact{
+    flex: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.right-contact>input{
+    width: 25rem;
+    height: 2rem;
+    margin: 0.5rem;
+    /* border: none; */
+    background-color: transparent;
+    border: 2px solid var(--support);
+    border-radius: 10px;
+    outline: none;
+    color: var(--white);
+    padding-inline: 1rem;
+}
+
+.right-contact>input:focus{
+    border: 2px solid var(--secondary);
+}
+
+.right-contact textarea{
+    width: 25rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    color: var(--white);
+    background: transparent;
+    border: 2px solid var(--support);
+    border-radius: 10px;
+    outline: none;
+    padding-inline: 1rem;
+}
+.right-contact textarea:focus{
+    border: 2px solid var(--secondary);
+}
+
+
+.contact-btn{
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 940px) {
+    .Contact{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2rem;
+    }
+    .contact-ad{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+        margin-left: 0;
+    }
+    .contact-heading{
+        margin-top: 7rem;
+        margin-left: 1rem;
+    }
+    .left-contact{
+        align-items: flex-start;
+        margin-left: -3rem;
+    }
+    .right-contact{
+        margin-left: -1rem;
+    }
+    .right-contact input{
+        width: 20rem;
+    }
+    .right-contact textarea{
+        width: 20rem;
+    }
+}
